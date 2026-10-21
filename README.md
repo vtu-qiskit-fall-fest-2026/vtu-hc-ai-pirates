@@ -91,23 +91,18 @@ Walk through how it works. A simple pipeline diagram in text or Mermaid is ideal
 The proposed workflow explores quantum cryptography techniques using Qiskit to study their potential for secure communication.
 
 ```mermaid
-flowchart LR
-    A[Security Parameters / Input Data] --> B[Input Validation & Preparation]
-    B --> C[Quantum Circuit using Qiskit]
-    C --> D[Quantum Measurement Results]
-    D --> E[Security & Performance Analysis]
-    E --> F[Results and Visualization]
+flowchart TD
+    A["1. Input: Provide website URL"]
+    B["2. Explore: Discover pages and elements"]
+    C["3. Test: Execute safe browser actions"]
+    D["4. Analyze: Identify potential issues"]
+    E["5. Report: Generate evidence and results"]
 
-1. **Input** — Provide the input data, security parameters, or communication settings required by the selected quantum cryptography technique.
-
-2. **Preprocessing** — Validate and prepare the input data and configure the parameters needed for the quantum circuit.
-
-3. **Quantum Core** — Construct and simulate the selected quantum circuit or algorithm using Qiskit.
-
-4. **Post-processing** — Process quantum measurement results and analyze relevant security and performance metrics.
-
-5. **Output** — Present simulation results, analysis, and observations about the potential benefits and limitations of the selected quantum security technique.
----
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+```
 
 ## 🛠️ Tech Stack
 
