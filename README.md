@@ -47,7 +47,7 @@
 | # | Name | GitHub Username | Role |
 | :-- | :--- | :--- | :--- |
 | 1 | Yash Vikas Gayake | [@yashgayake](https://github.com/yashgayake) | Team Lead & Quantum Security Research |
-| 2 | Pranav Janardhan Kadam | [@pranavkadm](https://github.com/pranavkadm) | Quantum Algorithm & Qiskit Development |
+| 2 | Pranav Janardhan Kadam | [@pranavkadm](https://github.com/Pranavkadam96) | Quantum Algorithm & Qiskit Development |
 | 3 | Kamini Janardhan Borde | [@kaminiborde](https://github.com/kaminiborde) | Testing, Results Analysis & Documentation |
 
 <!--
