@@ -46,9 +46,9 @@
 
 | # | Name | GitHub Username | Role |
 | :-- | :--- | :--- | :--- |
-| 1 | _Add your name_ | _your-github-username_ | _Team Lead_ |
-| 2 | _Add your name_ | _your-github-username_ | _Developer_ |
-| 3 | _Add your name_ | _your-github-username_ | _Developer_ |
+| 1 | Yash Vikas Gayake | [@yashgayake](https://github.com/yashgayake) | Team Lead & Quantum Security Research |
+| 2 | Pranav Janardhan Kadam | [@pranavkadm](https://github.com/pranavkadm) | Quantum Algorithm & Qiskit Development |
+| 3 | Kamini Janardhan Borde | [@kaminiborde](https://github.com/kaminiborde) | Testing, Results Analysis & Documentation |
 
 <!--
 Optional: add a plain list instead of the table above.
@@ -60,17 +60,11 @@ Optional: add a plain list instead of the table above.
 
 ## ❓ Problem Statement
 
-<!--
-State the problem you are solving. Be specific: what is broken or missing,
-who experiences it, and why does it matter. Link to the official problem
-statement from the brief if one applies.
--->
+**Problem:** The advancement of quantum computing presents potential challenges to conventional cryptographic systems, particularly those that rely on computational problems that may become easier for powerful quantum computers to solve. There is a need to explore quantum cryptography techniques and evaluate how they can contribute to secure communication and improved security.
 
-**Problem:** _Describe the problem in 2–3 sentences._
+**Why it matters:** Understanding the impact of quantum computing on cryptography is important for protecting sensitive information and preparing for future security challenges. Exploring quantum-based security approaches can help identify potential opportunities and limitations in quantum-secure communication.
 
-**Why it matters:** _Explain the impact or opportunity._
-
-**Track / Category:** _Online / Offline · Track 1 / Track 2 · <domain>_
+**Track / Category:** Online · Quantum Cryptography and Security
 
 ---
 
@@ -81,11 +75,11 @@ Describe your solution. Keep it concrete: the core idea, the user flow, and
 the quantum/ML technique you are applying.
 -->
 
-**Solution:** _In 2–3 sentences, describe what you built._
+**Solution:** AI Pirates aims to develop a Python-based quantum security prototype using Qiskit. The system will implement a quantum algorithm or circuit suited to the confirmed problem statement, simulate its operation, and analyze the results to evaluate its effectiveness for the selected security challenge.
 
-**Key idea:** _The one-line technical summary of your approach._
+**Key idea:** Use Qiskit to build and simulate a quantum circuit, process its measurement outcomes, and evaluate relevant security or performance metrics.
 
-**Why this works:** _How your approach addresses the problem statement._
+**Why this works:** Quantum circuit simulation provides a reproducible way to test the selected approach, analyze its behavior, and assess its potential for addressing the target security problem.
 
 ---
 
@@ -94,55 +88,58 @@ the quantum/ML technique you are applying.
 <!--
 Walk through how it works. A simple pipeline diagram in text or Mermaid is ideal.
 -->
+The proposed workflow explores quantum cryptography techniques using Qiskit to study their potential for secure communication.
 
 ```mermaid
 flowchart LR
-    A[Input Data] --> B[Preprocessing]
-    B --> C[Quantum Circuit / Model]
-    C --> D[Post-processing]
-    D --> E[Output]
-```
+    A[Security Parameters / Input Data] --> B[Input Validation & Preparation]
+    B --> C[Quantum Circuit using Qiskit]
+    C --> D[Quantum Measurement Results]
+    D --> E[Security & Performance Analysis]
+    E --> F[Results and Visualization]
 
-1. **Input** — _what data goes in and in what format_
-2. **Preprocessing** — _cleaning, feature extraction, encoding_
-3. **Quantum core** — _the circuit, ansatz, or algorithm used_
-4. **Post-processing** — _decoding, measurement, scoring_
-5. **Output** — _what the user finally gets_
+1. **Input** — Provide the input data, security parameters, or communication settings required by the selected quantum cryptography technique.
 
+2. **Preprocessing** — Validate and prepare the input data and configure the parameters needed for the quantum circuit.
+
+3. **Quantum Core** — Construct and simulate the selected quantum circuit or algorithm using Qiskit.
+
+4. **Post-processing** — Process quantum measurement results and analyze relevant security and performance metrics.
+
+5. **Output** — Present simulation results, analysis, and observations about the potential benefits and limitations of the selected quantum security technique.
 ---
 
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
 | :--- | :--- |
-| Language | Python 3.11+ |
-| Quantum SDK | Qiskit `>=1.0`, Qiskit Aer, Qiskit Runtime |
-| Optimisation | Qiskit Optimization / COBYLA / SPSA |
-| Simulation | AerSimulator (statevector / noisemodel) |
-| Environment | JupyterLab / VS Code, `venv` |
-| Version control | Git + GitHub |
-
+| **Programming Language** | Python 3.11+ |
+| **Quantum SDK** | Qiskit |
+| **Quantum Simulation** | Qiskit Aer (`AerSimulator`) |
+| **Optimization** | Qiskit Optimization / COBYLA / SPSA (if required) |
+| **Development Environment** | JupyterLab / VS Code, Python `venv` |
+| **Version Control** | Git + GitHub |
 ---
 
 ## 📁 Project Structure
 
 ```text
 vtu-hc-ai-pirates/
-├── README.md              # This file
+├── README.md              # Project documentation
 ├── requirements.txt       # Python dependencies
 ├── pyproject.toml         # Project metadata (optional)
-├── .gitignore
+├── .gitignore             # Files excluded from Git
 ├── notebooks/             # Jupyter notebooks for experiments
 │   └── exploration.ipynb
-├── src/
+├── src/                   # Main source code
 │   ├── __init__.py
-│   ├── circuit.py         # Quantum circuit construction
-│   ├── optimizer.py       # Optimization loop
-│   └── main.py            # Entry point
-├── data/                  # Datasets (use Git LFS for large files)
+│   ├── circuit.py         # Quantum circuit implementation
+│   ├── optimizer.py       # Optional optimization logic
+│   └── main.py            # Main entry point
+├── data/                  # Input data, if required
 ├── tests/                 # Unit tests
 │   └── test_circuit.py
-└── docs/                  # Notes, diagrams, reports
+└── docs/                  # Architecture, results, and reports
 ```
 
 ---
@@ -153,43 +150,55 @@ vtu-hc-ai-pirates/
 
 - Python 3.11 or newer
 - [Git](https://git-scm.com/downloads)
-- A GitHub account (you need collaborator access to this repo)
+- A GitHub account with collaborator access to the repository
 
-### 1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/vtu-qiskit-fall-fest-2026/vtu-hc-ai-pirates.git
 cd vtu-hc-ai-pirates
 ```
 
-### 2. Create a virtual environment
+### 2. Create a Virtual Environment
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate        # Linux / macOS
-# .venv\Scripts\activate         # Windows (PowerShell)
+python -m venv .venv
 ```
 
-### 3. Install dependencies
+**Windows (PowerShell):**
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+**Linux / macOS:**
 
 ```bash
-pip install --upgrade pip
+source .venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### 4. Run
+### 4. Run the Project
+
+After the source code and dependencies are implemented:
 
 ```bash
 python -m src.main
 ```
 
-Or launch the notebook workflow:
+To launch JupyterLab, if installed:
 
 ```bash
 jupyter lab
 ```
 
-### 5. Run the tests
+### 5. Run Tests
 
 ```bash
 pytest -q
@@ -199,35 +208,32 @@ pytest -q
 
 ## 🔁 How to Push Code
 
-> Full walkthrough: **[Git & Collaboration Handbook](../vtu-hc-guide-git-and-collaboration)** — collaboration
-> workflow, branches, pull requests, reviews and conflict resolution.
+### Configure Git (First Time Only)
 
-### Configure Git (first time only)
+Use your actual name and the email associated with your GitHub account.
 
 ```bash
-git config --global user.name  "Your Name"
+git config --global user.name "Your Name"
 git config --global user.email "you@example.com"
 ```
 
-### Everyday workflow
+### Everyday Workflow
 
 ```bash
 # 1. Get the latest changes
 git checkout main
 git pull origin main
 
-# 2. Create a branch for your work
-git checkout -b feature/my-task
+# 2. Create a separate branch for your task
+git checkout -b feature/quantum-security
 
-# 3. Commit your work
+# 3. Review and commit your changes
+git status
 git add .
-git commit -m "feat: add variational circuit for the search problem"
+git commit -m "feat: implement quantum security circuit"
 
-# 4. Push the branch
-git push -u origin feature/my-task
-
-# 5. Open a Pull Request on GitHub and request a review
-#    https://github.com/vtu-qiskit-fall-fest-2026/vtu-hc-ai-pirates/compare/main...feature/my-task
+# 4. Push your branch
+git push -u origin feature/quantum-security
 
 # 6. After approval, merge into main
 git checkout main
@@ -270,14 +276,13 @@ git pull --rebase       # update your branch on top of main
 
 - [ ] Repository created and **public**
 - [ ] All team members added as **collaborators** and invitations accepted
-- [ ] `README.md` updated with project details, problem statement and solution
-- [ ] Team members listed under [Team Members](#-team-members-github-ids)
+- ✅ `README.md` updated with project details, problem statement and proposed solution
+- ✅ Team members listed under [Team Members](#-team-members-github-ids)
 - [ ] `requirements.txt` committed and project runs from a clean clone
 - [ ] Code pushed to `main` and the latest `main` builds successfully
-- [ ] Notebooks committed with **cleared outputs** (or use `nbstrip`)
-- [ ] `README` includes a demo screenshot / video link
+- [ ] Notebooks committed with **cleared outputs** (or use `nbstrip`), if applicable
+- [ ] `README.md` includes a demo screenshot or video link
 - [ ] Short project summary submitted on the hackathon portal
-
 ---
 
 ## 📚 Resources
