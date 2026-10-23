@@ -1,21 +1,20 @@
-# Core quantum SDK
+# QuantumShield - Qiskit Fall Fest 2026
+# Quantum computing and simulation
 qiskit>=1.0,<2.0
+qiskit-aer>=0.15
 qiskit-ibm-runtime>=0.30
 
-# Local simulator
-qiskit-aer>=0.15
-
-# Optional add-ons -- remove the ones you do not use
-qiskit-algorithms>=0.3
-qiskit-optimization>=0.6
-qiskit-nature>=0.7
-
-# Numerics, data and plotting
+# Python app and scientific computing
+streamlit>=1.30.0
 numpy>=1.26
 scipy>=1.11
 pandas>=2.1
 matplotlib>=3.8
 scikit-learn>=1.4
+Pillow>=9.5.0
+
+# Presentation generation
+python-pptx>=0.6.21
 
 # Testing
 pytest>=8.0

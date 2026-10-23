@@ -1,0 +1,6 @@
+{
+  "name": "QuantumShield",
+  "description": "QuantumShield: BB84 Quantum Key Distribution and Eavesdropping Detection for Qiskit Fall Fest 2026",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
